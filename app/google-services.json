@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "72452579960",
+    "firebase_url": "https://godock-b002d.firebaseio.com",
+    "project_id": "godock-b002d",
+    "storage_bucket": "godock-b002d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72452579960:android:c45fc8cc43d8f6f3",
+        "android_client_info": {
+          "package_name": "godock.edenhighway.sujae.com.godock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "72452579960-e845a5o87aean58776jq1tp60qrtvedh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "godock.edenhighway.sujae.com.godock",
+            "certificate_hash": "ce7926d43b30a35eb3bb6a17ac0090291a1b56d3"
+          }
+        },
+        {
+          "client_id": "72452579960-q3irgoca8pih15otpsh8p32tip1b17tt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAljtp5W0KFM7D04OW99lmk7YIfH0f5xfs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "72452579960-q3irgoca8pih15otpsh8p32tip1b17tt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
