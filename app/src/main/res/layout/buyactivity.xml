@@ -67,22 +67,18 @@
         android:textSize="20dp"
         android:visibility="visible" />
 
-    <com.daimajia.slider.library.SliderLayout
-        android:id="@+id/slider"
+    <view
         android:layout_width="match_parent"
-        custom:pager_animation="Default"
-        custom:auto_cycle="true"
-        custom:indicator_visibility="visible"
-        custom:pager_animation_span="1100"
         android:layout_height="200dp"
-        android:layout_marginTop="10dp"
-        />
+        class="android.support.v4.view.ViewPager"
+        android:id="@+id/view"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:id="@+id/SelectedMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal"
         android:text="족발"
         android:textColor="#a0f"
@@ -96,5 +92,5 @@
         android:layout_gravity="center_horizontal"
         android:text="먹겠습니다!"
         android:textStyle="bold"
-        android:textSize="40dp"/>
+        android:textSize="20dp"/>
 </LinearLayout>
