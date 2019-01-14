@@ -40,7 +40,7 @@
                 app:srcCompat="@drawable/make" />
 
             <ImageButton
-                android:id="@+id/order"
+                android:id="@+id/buy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/order" />

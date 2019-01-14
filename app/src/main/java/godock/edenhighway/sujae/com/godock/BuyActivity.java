@@ -11,7 +11,7 @@ public class BuyActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.buyactivity);
 
         viewPager = findViewById(R.id.view);
         adapter = new ImageSliderAdapter(this);
