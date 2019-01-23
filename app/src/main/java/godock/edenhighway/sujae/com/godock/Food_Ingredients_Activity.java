@@ -1,8 +1,5 @@
 package godock.edenhighway.sujae.com.godock;
 
-<<<<<<< HEAD
-public class Food_Ingredients_Activity {
-=======
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -67,5 +64,5 @@ public class Food_Ingredients_Activity extends AppCompatActivity  {
 
     }
 
->>>>>>> f45acab95b486216adab9cd96a802e6ec2b14169
+
 }
