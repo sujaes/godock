@@ -1,4 +1,4 @@
 package godock.edenhighway.sujae.com.godock;
 
-public class makeActivity {
+public class Food_Ingredients_Activity {
 }
