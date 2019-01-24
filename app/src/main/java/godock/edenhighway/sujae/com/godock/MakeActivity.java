@@ -1,5 +1,6 @@
 package godock.edenhighway.sujae.com.godock;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -25,6 +26,7 @@ public class MakeActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // "먹겠습니다" 버튼 누를 시 먹은 데이터 베이스에 추가.
                 // 레시피 보여줌
+                startActivity(new Intent(getApplicationContext(), RecipeActivity.class));
             }
         });
     }
