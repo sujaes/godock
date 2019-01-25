@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="350dp"
+    android:layout_height="400dp"
+    android:orientation="vertical"
+    android:paddingTop="30dp"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="다 쓴 재료를 선택해주세요"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_gravity="top"
+        android:layout_marginLeft="15dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/checkboxLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop = "15dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="15dp">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="돌아가기"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/confirmButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="확인"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_gravity="right"/>
+
+    </FrameLayout>
+</FrameLayout>

@@ -26,6 +26,13 @@ package="godock.edenhighway.sujae.com.godock">
     <activity
         android:name=".RecipeActivity">
     </activity>
+    <activity
+        android:name=".SubDialogActivity"
+        android:theme="@style/Theme.MyNoTitleAndActionBarDialog"></activity>
+    <activity
+        android:name=".IngredientListActivity"
+        android:theme="@style/Theme.MyNoTitleAndActionBarDialog"></activity>
+
 
     <meta-data
         android:name="com.google.android.gms.ads.APPLICATION_ID"

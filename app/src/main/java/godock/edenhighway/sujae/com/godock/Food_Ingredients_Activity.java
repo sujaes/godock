@@ -30,6 +30,7 @@ public class Food_Ingredients_Activity extends AppCompatActivity  implements Vie
         switch (v.getId()) {
             case R.id.viewlistButton:
                 // 목록으로 보기 구현
+                startActivity(new Intent(getApplicationContext(), IngredientListActivity.class));
                 break;
             case R.id.addButton:
                 // 재료 추가 팝업 구현
