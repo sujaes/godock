@@ -38,13 +38,10 @@ public class SubDialogActivity extends AppCompatActivity{
             @Override
             public void onClick(View view) {
                 // 다쓴 재료를 냉장고 DB에서 제거 구현
-
                 //
-
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
             }
         });
-
         LinkedHashMap<String, String> ingredients = new LinkedHashMap<String, String>();
         ingredients.put("1", "재료 1");
         ingredients.put("2", "재료 2");
@@ -55,10 +52,8 @@ public class SubDialogActivity extends AppCompatActivity{
 
         Set<?> set = ingredients.entrySet();
         Iterator<?> iterator = set.iterator();
-
         while(iterator.hasNext()){
             Map.Entry me = (Map.Entry) iterator.next();
-
             checkBox = new CheckBox(this);
             checkBox.setId(Integer.parseInt(me.getKey().toString()));
             checkBox.setText(me.getValue().toString());
