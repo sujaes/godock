@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android"
 package="godock.edenhighway.sujae.com.godock">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
 <application
     android:allowBackup="true"
@@ -8,6 +9,7 @@ package="godock.edenhighway.sujae.com.godock">
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/AppTheme">
+
     <activity android:name=".LoadingActivity">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
@@ -34,8 +36,8 @@ package="godock.edenhighway.sujae.com.godock">
         android:name=".IngredientListActivity"
         android:theme="@style/Theme.MyNoTitleAndActionBarDialog"></activity>
     <activity
-        android:name=".PreferenceActivity">
-
+        android:name=".PreferenceActivity"
+        android:theme="@style/Theme.MyNoTitleAndActionBarDialog">
     </activity>
 
 

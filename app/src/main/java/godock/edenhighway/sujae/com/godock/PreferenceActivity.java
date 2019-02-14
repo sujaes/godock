@@ -1,6 +1,8 @@
 package godock.edenhighway.sujae.com.godock;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -85,6 +87,12 @@ public class PreferenceActivity extends AppCompatActivity {
                 for(String sel: selectedList){
                     System.out.println(sel);
                 }
+                // 두번째 부터 선호도 검사가 뜨지 않도록 처리
+                SharedPreferences sp = getSharedPreferences("godock_log", Activity.MODE_PRIVATE);
+                SharedPreferences.Editor editor = sp.edit();
+                editor.putInt("Preference Check", 1);
+                editor.commit();
+
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
             }
         }

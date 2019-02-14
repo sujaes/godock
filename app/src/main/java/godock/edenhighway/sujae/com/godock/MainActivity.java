@@ -1,7 +1,9 @@
 package godock.edenhighway.sujae.com.godock;
 
+import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.graphics.Color;
 import android.os.AsyncTask;
@@ -46,6 +48,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        SharedPreferences sp = getSharedPreferences("godock_log",Activity.MODE_PRIVATE);
+
+        System.out.println(sp.getInt("Preference Check",  0));
+        if(sp.getInt("Preference Check",  0) == 0){
+            startActivity(new Intent(getApplicationContext(), PreferenceActivity.class));
+        }
+
         buyButton = (ImageButton)findViewById(R.id.buy);
         buyButton.setOnClickListener(this);
 
@@ -206,10 +215,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override public void onBackPressed() {
-        moveTaskToBack(true);
-        finish();
-        android.os.Process.killProcess(android.os.Process.myPid());
-
+        finishAffinity();
+        System.runFinalization();
+        System.exit(0);
     }
 
 }
