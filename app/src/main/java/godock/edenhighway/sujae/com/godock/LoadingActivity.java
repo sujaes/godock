@@ -18,7 +18,7 @@ public class LoadingActivity extends FragmentActivity {
 
         new Handler().postDelayed(new Runnable() {
             public void run() {
-                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                startActivity(new Intent(getApplicationContext(), PreferenceActivity.class));
             }
         }, 1500);
     }
