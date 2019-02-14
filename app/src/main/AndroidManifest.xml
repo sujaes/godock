@@ -34,8 +34,9 @@ package="godock.edenhighway.sujae.com.godock">
         android:name=".IngredientListActivity"
         android:theme="@style/Theme.MyNoTitleAndActionBarDialog"></activity>
     <activity
-        android:name=".PreferenceActivity"
-        android:theme="@style/Theme.MyNoTitleAndActionBarDialog"></activity>
+        android:name=".PreferenceActivity">
+
+    </activity>
 
 
     <meta-data

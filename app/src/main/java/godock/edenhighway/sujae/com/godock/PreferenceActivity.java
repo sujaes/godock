@@ -29,6 +29,10 @@ public class PreferenceActivity extends AppCompatActivity {
     private List <String>preferenceList = new ArrayList<String>(); // 선호도 리스트
     private List <String>selectedList = new ArrayList<String>(); // 선택된 선호도 리스트
 
+    @Override public void onBackPressed() {
+        //super.onBackPressed();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
