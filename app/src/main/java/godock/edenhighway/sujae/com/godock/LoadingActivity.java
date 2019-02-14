@@ -37,12 +37,14 @@ public class LoadingActivity extends FragmentActivity {
                         1);
             }
         }
+        else{
+            new Handler().postDelayed(new Runnable() {
+                public void run() {
+                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                }
+            }, 1500);
 
-        new Handler().postDelayed(new Runnable() {
-            public void run() {
-                startActivity(new Intent(getApplicationContext(), MainActivity.class));
-            }
-        }, 1500);
+        }
 
     }
 }
